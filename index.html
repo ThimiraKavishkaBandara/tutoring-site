@@ -1,0 +1,433 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>High-School Ready Tutoring</title>
+  <meta name="description" content="Tutoring that builds confidence, not just grades. High school prep for middle school + college prep for high school." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-dot"></span>
+        <span class="brand-text">High-School Ready Tutoring</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#programs">Programs</a>
+        <a href="#approach">Approach</a>
+        <a href="#team">Tutors</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="btn btn-primary" href="#contact">Book a Session</a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" hidden>
+      <div class="container mobile-links">
+        <a href="#programs">Programs</a>
+        <a href="#approach">Approach</a>
+        <a href="#team">Tutors</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-primary" href="#contact">Book a Session</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="pill">Limited openings • 1-on-1 + weekend groups</div>
+
+          <h1>
+            It’s not about the material.
+            <span class="accent">It’s how you deliver it.</span>
+          </h1>
+
+          <p class="lead">
+            Parents think they’re paying for exponent rules and systems of equations.
+            What they’re really paying for is <strong>confidence</strong>, <strong>mentorship</strong>,
+            and a tutor who understands how kids actually learn.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contact">Request a Session</a>
+            <a class="btn btn-ghost" href="#programs">See programs</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-top">Curriculum-first</div>
+              <div class="stat-bottom">Build fundamentals for HS</div>
+            </div>
+            <div class="stat">
+              <div class="stat-top">Mentorship</div>
+              <div class="stat-bottom">Confidence + habits</div>
+            </div>
+            <div class="stat">
+              <div class="stat-top">Real learning</div>
+              <div class="stat-bottom">Understanding > memorizing</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-inner">
+            <div class="hero-img" role="img" aria-label="Tutoring session photo"></div>
+
+            <div class="hero-card-content">
+              <h3>What we help with</h3>
+              <ul class="checklist">
+                <li>Middle School Math & English (grades 6–8)</li>
+                <li>High school readiness (honors/AP planning)</li>
+                <li>College prep track (ACT/SAT fundamentals)</li>
+              </ul>
+
+              <div class="note">
+                <strong>Parent-friendly:</strong> clear plan, honest feedback, progress updates.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-glow" aria-hidden="true"></div>
+    </section>
+
+    <!-- PROGRAMS (TABS) -->
+    <section class="section" id="programs">
+      <div class="container">
+        <div class="section-head">
+          <h2>Programs</h2>
+          <p>Pick a path — both are built around fundamentals, mentorship, and a clear plan.</p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Programs">
+          <button class="tab is-active" role="tab" aria-selected="true" data-tab="hs-prep">
+            High School Prep
+            <span class="tab-sub">(for middle schoolers)</span>
+          </button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="college-prep">
+            College Prep
+            <span class="tab-sub">(for high schoolers)</span>
+          </button>
+        </div>
+
+        <!-- TAB: High School Prep -->
+        <div class="tab-panel is-active" id="hs-prep" role="tabpanel">
+          <div class="grid-3">
+            <div class="card">
+              <h3>Fundamentals Reset</h3>
+              <p>Rebuild the core basics that make high school math/English feel easy.</p>
+              <ul class="bullets">
+                <li>Gap-finding baseline</li>
+                <li>Weekly structure + flexible delivery</li>
+                <li>Confidence + habits</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Honors Track Plan</h3>
+              <p>Teacher recommendation review + a plan to move toward honors classes.</p>
+              <ul class="bullets">
+                <li>Recommendation discussion</li>
+                <li>Targeted skill roadmap</li>
+                <li>Pre-calc readiness foundations</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Weekend Boost (Group)</h3>
+              <p>Small-group sessions for reps, energy, and real feedback.</p>
+              <ul class="bullets">
+                <li>Math/English bootcamps</li>
+                <li>Repetition + reasoning</li>
+                <li>Confidence under pressure</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB: College Prep -->
+        <div class="tab-panel" id="college-prep" role="tabpanel" hidden>
+          <div class="grid-3">
+            <div class="card">
+              <h3>College Readiness</h3>
+              <p>Study systems, organization, and academic independence.</p>
+              <ul class="bullets">
+                <li>Time management + routine</li>
+                <li>Grade strategy (without burnout)</li>
+                <li>Mentorship check-ins</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>ACT/SAT Fundamentals</h3>
+              <p>Build the skills that actually move scores — not random trick memorization.</p>
+              <ul class="bullets">
+                <li>Math foundations + speed</li>
+                <li>Reading comprehension patterns</li>
+                <li>Practice plan + review method</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Advanced Coursework Support</h3>
+              <p>Support for honors/AP classes while keeping fundamentals strong.</p>
+              <ul class="bullets">
+                <li>AP/Honors pacing help</li>
+                <li>Concept repetition</li>
+                <li>Test prep + review cycles</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout" style="margin-top:18px;">
+          <div>
+            <h3>Not sure which path fits?</h3>
+            <p class="muted">Text us the grade + subject and we’ll recommend the best plan.</p>
+          </div>
+          <a class="btn btn-primary" href="#contact">Ask us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section class="section alt" id="approach">
+      <div class="container">
+        <div class="section-head">
+          <h2>Our approach</h2>
+          <p>
+            The key is understanding each student — patterns, motivation, and what they’re not saying.
+            Teaching works best when you’re actually listening.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Structure… but flexible</h3>
+            <p>
+              Yes, there are basics that must be covered to be prepared. But the real win is adapting the plan
+              to the student — especially when focus and attention are a challenge.
+            </p>
+            <p class="muted">
+              We don’t force a rigid template. We build a rhythm the student can actually stick to.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Mentorship is the product</h3>
+            <p>
+              Parents may ask for exponent rules. What they’re really buying is curriculum knowledge,
+              honest guidance, and a tutor who helps their child feel capable.
+            </p>
+            <p class="muted">
+              Example: honors/AP planning. We review teacher recommendations together, ask “why,” and map a path forward.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Singapore / Russian-inspired learning</h3>
+            <p>
+              We use repetition to lock in concepts, and we always explain new rules using previous rules.
+              Students stop memorizing and start understanding.
+            </p>
+            <p class="muted">
+              Exponent rules aren’t “random rules” — they’re just another way to simplify expressions.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Real questions, real reasoning</h3>
+            <p>
+              We finish with problems that feel real — not to chase the right answer,
+              but to understand how the answer was formed.
+            </p>
+            <p class="muted">
+              The goal isn’t only higher grades. It’s confidence and independence.
+            </p>
+          </div>
+        </div>
+
+        <div class="callout">
+          <div>
+            <h3>What parents notice first</h3>
+            <p class="muted">Less stress. More ownership. A student who stops saying “I’m just bad at this.”</p>
+          </div>
+          <a class="btn btn-primary" href="#contact">Get started</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section" id="team">
+      <div class="container">
+        <div class="section-head">
+          <h2>Your tutors</h2>
+          <p>Small team. High standards. Good energy. Real results.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card person">
+            <div class="avatar" style="background-image:url('assets/tutor1.jpg')"></div>
+            <h3>Your Name</h3>
+            <p class="tag">Math • English • Planning</p>
+            <p>
+              Curriculum-focused tutoring with mentorship built in. We don’t just teach —
+              we build the student’s confidence and learning habits.
+            </p>
+          </div>
+
+          <div class="card person">
+            <div class="avatar" style="background-image:url('assets/tutor2.jpg')"></div>
+            <h3>Friend Tutor #1</h3>
+            <p class="tag">Math • ACT/SAT</p>
+            <p>
+              Add a short bio: what they’re great at, who they work best with, and their vibe.
+            </p>
+          </div>
+
+          <div class="card person">
+            <div class="avatar" style="background-image:url('assets/tutor3.jpg')"></div>
+            <h3>Friend Tutor #2</h3>
+            <p class="tag">English • Reading • Writing</p>
+            <p>
+              Add a short bio: strengths, style, and what students can expect in a session.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section alt" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <h2>Pricing</h2>
+          <p>Keep it simple. No long commitments required.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card price">
+            <h3>1-on-1</h3>
+            <div class="price-num">$__ / hr</div>
+            <p class="muted">Personalized plan + progress guidance.</p>
+            <ul class="bullets">
+              <li>Math or English</li>
+              <li>Homework + tests</li>
+              <li>Planning included</li>
+            </ul>
+          </div>
+
+          <div class="card price featured">
+            <div class="badge">Most popular</div>
+            <h3>4-Session Pack</h3>
+            <div class="price-num">$__</div>
+            <p class="muted">For momentum and measurable progress.</p>
+            <ul class="bullets">
+              <li>Weekly structure</li>
+              <li>Baseline + roadmap</li>
+              <li>Parent check-in</li>
+            </ul>
+          </div>
+
+          <div class="card price">
+            <h3>Weekend Groups</h3>
+            <div class="price-num">$__ / session</div>
+            <p class="muted">Small group reps + energy.</p>
+            <ul class="bullets">
+              <li>Bootcamps</li>
+              <li>ACT/SAT optional</li>
+              <li>Limited seats</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="fineprint">
+          *Replace pricing with your real numbers. Or write “Contact for pricing” if you want to keep it flexible.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Fastest way: text us. We’ll reply with availability and next steps.</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-left">
+            <h3>Request a session</h3>
+            <p class="muted">
+              Tell us grade, subject, and what they’re struggling with. If you’re deciding between regular vs honors/AP,
+              mention that too — we’ll guide you.
+            </p>
+
+            <div class="contact-actions">
+              <!-- CHANGE THESE -->
+              <a class="btn btn-primary" href="tel:+10000000000">Call</a>
+              <a class="btn btn-ghost" href="sms:+10000000000">Text</a>
+              <a class="btn btn-ghost" href="mailto:youremail@example.com">Email</a>
+            </div>
+
+            <div class="mini">
+              <div><strong>Hours:</strong> Weekdays 4–9pm • Weekends available</div>
+              <div><strong>Format:</strong> In-person or online</div>
+              <div><strong>Area:</strong> Chicagoland (update this)</div>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <h3>Optional: Intake form</h3>
+            <p class="muted">If you want, add a Google Form link here so parents can submit details.</p>
+            <a class="btn btn-primary" href="#" aria-disabled="true">Open Form</a>
+
+            <div class="divider"></div>
+
+            <h3>FAQ</h3>
+            <details>
+              <summary>Do you help with homework?</summary>
+              <p>Yes — but we use homework as a tool to strengthen fundamentals, not just finish assignments.</p>
+            </details>
+            <details>
+              <summary>How soon will we see improvement?</summary>
+              <p>Most students feel more confident within a few sessions. Grades follow when fundamentals lock in.</p>
+            </details>
+            <details>
+              <summary>Do you do honors/AP planning?</summary>
+              <p>Yes — we review teacher recommendations, identify gaps, and build a plan to level up.</p>
+            </details>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="muted">© <span id="year"></span> High-School Ready Tutoring • Built with care</div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
