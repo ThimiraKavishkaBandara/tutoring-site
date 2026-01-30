@@ -392,18 +392,21 @@ details p{ margin: 10px 0 0; color: rgba(255,255,255,.80); }
 
 
 
-/* Align tutor resume buttons to the bottom of each card */
-/* Force grid items to stretch and pin actions to the bottom */
-.grid-3{
-  align-items: stretch; /* make all cards in the row same height */
-}
-
+/* Tighten tutor cards */
 .card.person{
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  padding: 16px;              /* slightly less padding */
 }
 
-.card.person .person-actions{
-  margin-top: auto; /* THIS pins the button area to the bottom */
+.card.person p{
+  margin-bottom: 8px;         /* reduce paragraph spacing */
 }
+
+.card.person .tag{
+  margin-bottom: 8px;
+}
+
+.person-actions{
+  margin-top: auto;           /* keep button pinned */
+  padding-top: 8px;
+}
+
