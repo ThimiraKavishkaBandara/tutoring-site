@@ -389,3 +389,20 @@ details p{ margin: 10px 0 0; color: rgba(255,255,255,.80); }
   .nav-links{ display:none; }
   .nav-toggle{ display:inline-flex; align-items:center; justify-content:center; }
 }
+
+
+
+/* Align tutor resume buttons to the bottom of each card */
+.person{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.person-content{
+  flex: 1;
+}
+
+.person-actions{
+  margin-top: 14px;
+}
