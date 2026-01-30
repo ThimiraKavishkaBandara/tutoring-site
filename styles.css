@@ -401,7 +401,7 @@ details p{ margin: 10px 0 0; color: rgba(255,255,255,.80); }
 .card.person{
   display: flex;
   flex-direction: column;
-  height: 200%;
+  height: 110%;
 }
 
 .card.person .person-actions{
