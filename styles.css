@@ -391,20 +391,30 @@ details p{ margin: 10px 0 0; color: rgba(255,255,255,.80); }
 }
 
 
-/* Tighten tutor cards */
+/* Tutor cards: balanced height + aligned buttons */
+.grid-3{
+  align-items: stretch;
+}
+
 .card.person{
-  padding: 16px;              /* slightly less padding */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 18px;            /* back to original padding */
 }
 
 .card.person p{
-  margin-bottom: 8px;         /* reduce paragraph spacing */
+  margin: 0 0 10px;         /* restore normal paragraph spacing */
+  line-height: 1.52;        /* a bit looser */
+  font-size: 15px;          /* slightly bigger */
 }
 
 .card.person .tag{
-  margin-bottom: 8px;
+  margin: 0 0 10px;
 }
 
 .person-actions{
-  margin-top: auto;           /* keep button pinned */
-  padding-top: 8px;
+  margin-top: auto;         /* keep buttons pinned to bottom */
+  padding-top: 12px;
 }
+
