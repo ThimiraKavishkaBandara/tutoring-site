@@ -391,18 +391,20 @@ details p{ margin: 10px 0 0; color: rgba(255,255,255,.80); }
 }
 
 
-
-/* Align tutor resume buttons to the bottom of each card */
-.person{
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+/* Tighten tutor cards */
+.card.person{
+  padding: 16px;              /* slightly less padding */
 }
 
-.person-content{
-  flex: 1;
+.card.person p{
+  margin-bottom: 8px;         /* reduce paragraph spacing */
+}
+
+.card.person .tag{
+  margin-bottom: 8px;
 }
 
 .person-actions{
-  margin-top: 14px;
+  margin-top: auto;           /* keep button pinned */
+  padding-top: 8px;
 }
