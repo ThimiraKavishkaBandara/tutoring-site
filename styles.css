@@ -1,4 +1,3 @@
-/* styles.css */
 :root{
   --bg: #070A12;
   --panel: rgba(255,255,255,.06);
@@ -416,5 +415,28 @@ details p{ margin: 10px 0 0; color: rgba(255,255,255,.80); }
 .person-actions{
   margin-top: auto;         /* keep buttons pinned to bottom */
   padding-top: 12px;
+}
+
+/* Tutor Availability (Google Calendar embeds) */
+.availability{ margin-top: 12px; }
+
+.availability .small{
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.calendar-embed{
+  margin-top: 10px;
+  border: 1px solid var(--stroke);
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(255,255,255,.02);
+}
+
+.calendar-embed iframe{
+  width: 100%;
+  height: 420px; /* adjust if you want */
+  border: 0;
+  display: block;
 }
 
