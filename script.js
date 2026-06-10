@@ -24,27 +24,28 @@ if (toggle && menu) {
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
-// program tabs
-const tabs = document.querySelectorAll('.tab');
-const panels = document.querySelectorAll('.tab-panel');
+// tabs — scoped per tablist so multiple tab groups work independently
+document.querySelectorAll('[role="tablist"]').forEach(tablist => {
+  const tabs = tablist.querySelectorAll('.tab');
+  const section = tablist.closest('.section, section');
+  const panels = section ? section.querySelectorAll('.tab-panel') : document.querySelectorAll('.tab-panel');
 
-tabs.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const targetId = btn.dataset.tab;
+  tabs.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.dataset.tab;
 
-    // update buttons
-    tabs.forEach(t => {
-      t.classList.remove('is-active');
-      t.setAttribute('aria-selected', 'false');
-    });
-    btn.classList.add('is-active');
-    btn.setAttribute('aria-selected', 'true');
+      tabs.forEach(t => {
+        t.classList.remove('is-active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      btn.classList.add('is-active');
+      btn.setAttribute('aria-selected', 'true');
 
-    // update panels
-    panels.forEach(p => {
-      const isTarget = p.id === targetId;
-      p.hidden = !isTarget;
-      p.classList.toggle('is-active', isTarget);
+      panels.forEach(p => {
+        const isTarget = p.id === targetId;
+        p.hidden = !isTarget;
+        p.classList.toggle('is-active', isTarget);
+      });
     });
   });
 });
